@@ -129,11 +129,15 @@
 		makeLine({x:250, y:200}, {x:310, y:145});
 		makeLine({x:295, y:165}, {x:295, y:230});
 		makeLine({x:280, y:185}, {x:280, y:210});
-		makeLine({x:265, y:200}, {x:265, y:200});
+		makeLine({x:265, y:200}, {x:265, y:205});
+
+
+		makeLine({x:290, y:270}, {x:205, y:325});
+		makeLine({x:205, y:325}, {x:250, y:220});
 		                
 
 		
-                // inner ring
+                
 
                 return balls;
             }
