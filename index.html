@@ -20,16 +20,12 @@
 
       var layer = new Kinetic.Layer();
 
-      var circle = new Kinetic.Wedge({
-        x: stage.getWidth() / 2,
+     var circle = new Kinetic.Circle({
+	  x: stage.getWidth() / 2,
         y: stage.getHeight() / 2,
-        radius: 70,
-        angleDeg: 60,
-        fill: 'red',
-        stroke: 'black',
-        strokeWidth: 4,
-        rotationDeg: -120
-      });
+        radius: 10,
+        fill: 'blue'
+	});
 
       // add the shape to the layer
       layer.add(circle);
