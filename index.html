@@ -38,35 +38,26 @@
 					
 				 balls.push(new Ball(newPos.x, newPos.y, 0, 0, blue));
 			}
+
 		}
                 
-                // G
-                balls.push(new Ball(200, 20, 0, 0, blue));
+                // outer ring
+                // balls.push(new Ball(200, 20, 0, 0, blue));
 		makeLine({x : 200, y: 20}, {x: 360, y : 125});
-		balls.push(new Ball(360, 125, 0, 0, blue));
-		balls.push(new Ball(360, 275, 0, 0, blue));
-		balls.push(new Ball(200, 380, 0, 0, blue));
-		balls.push(new Ball(40, 275, 0, 0, blue));
-		balls.push(new Ball(40, 125, 0, 0, blue));
-
-
-		
-		
-		
+		// balls.push(new Ball(360, 125, 0, 0, blue));
+		makeLine({x : 360, y: 125}, {x: 360, y : 275});
+		// balls.push(new Ball(360, 275, 0, 0, blue));
+		makeLine({x : 360, y: 275}, {x: 200, y : 380});
+		// balls.push(new Ball(200, 380, 0, 0, blue));
+		makeLine({x : 200, y: 380}, {x: 40, y : 275});
+		// balls.push(new Ball(40, 275, 0, 0, blue));
+		makeLine({x: 40, y : 275}, {x: 40, y : 125});
+		// balls.push(new Ball(40, 125, 0, 0, blue));
+		makeLine({x: 40, y : 125}, {x: 200, y : 20});
               
                 
-                // O
-                //balls.push(new Ball(210, 81, 0, 0, red));
-                //balls.push(new Ball(197, 91, 0, 0, red));
-                //balls.push(new Ball(196, 103, 0, 0, red));
-                //balls.push(new Ball(200, 116, 0, 0, red));
-                //balls.push(new Ball(209, 127, 0, 0, red));
-                //balls.push(new Ball(223, 130, 0, 0, red));
-                //balls.push(new Ball(237, 127, 0, 0, red));
-                //balls.push(new Ball(244, 114, 0, 0, red));
-                //balls.push(new Ball(242, 98, 0, 0, red));
-                //balls.push(new Ball(237, 86, 0, 0, red));
-                //balls.push(new Ball(225, 81, 0, 0, red));
+                // inner ring
+                
                 
                 // O
                 var oOffset = 67;
