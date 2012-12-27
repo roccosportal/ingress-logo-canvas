@@ -47,10 +47,9 @@
 
 		var katheteX = trueX * trueX;
 		var katheteY = trueY * trueY;
-console.log(katheteX);
 		var hypothenuse = katheteX + katheteY;
 		var result = Math.sqrt(hypothenuse)
-		var count = result / 15;
+		var count = result / 40;
 
 		count = Math.round(count);
 		console.log('count:' + count);
@@ -146,13 +145,11 @@ console.log(katheteX);
             }
             
             function updateBalls(canvas, balls, timeDiff, mousePos){
-                var context = canvas.getContext("2d");
-                // var collisionDamper = 0.3;
-		var collisionDamper = 0.3;                
-		//var floorFriction = 0.0005 * timeDiff;
-		var floorFriction = 0.0001 * timeDiff;
-                var mouseForceMultiplier = 0.2 * timeDiff;
-                var restoreForce = 0.002 * timeDiff;
+                 var context = canvas.getContext("2d");
+		    var collisionDamper = 0.3;
+		    var floorFriction = 0.0005 * timeDiff;
+		    var mouseForceMultiplier = 1 * timeDiff;
+		    var restoreForce = 0.002 * timeDiff;
                 
                 for (var n = 0; n < balls.length; n++) {
                     var ball = balls[n];
@@ -187,10 +184,10 @@ console.log(katheteX);
                     var totalDist = Math.abs(distX) + Math.abs(distY);
                     
                     var forceX = (Math.abs(distX) / totalDist) *
-                    (1 / radius) *
+                    (0.2 / radius) *
                     mouseForceMultiplier;
                     var forceY = (Math.abs(distY) / totalDist) *
-                    (1 / radius) *
+                    (0.2 / radius) *
                     mouseForceMultiplier;
                     
                     if (distX > 0) { // mouse is left of ball
